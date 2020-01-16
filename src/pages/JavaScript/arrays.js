@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
 
 const ArraysLessons = () => (
   <Layout pageId="Arrays">
@@ -19,7 +19,7 @@ const ArraysLessons = () => (
       </ul>
       <p> And an excersice with a hidden bonus!, enjoy! </p>
 
-      <section>
+      <section className="box">
         <h1>map()</h1>
         <p>
           {" "}
@@ -45,7 +45,7 @@ const ArraysLessons = () => (
         </a>
       </section>
 
-      <section>
+      <section className="box">
         <h1>reduce()</h1>
         <p>
           {" "}
@@ -82,7 +82,7 @@ const ArraysLessons = () => (
         </p>
       </section>
 
-      <section>
+      <section className="box">
         <h1>indexOf()</h1>
         <p>
           {" "}
@@ -113,7 +113,7 @@ const ArraysLessons = () => (
         </a>
       </section>
 
-      <section>
+      <section className="box">
         <h1>sort()</h1>
         <p> array.sort() method items in the array. </p>
         <p>
@@ -140,7 +140,7 @@ const ArraysLessons = () => (
 
       <br />
 
-      <div class="exercise">
+      <div class="box dark-container">
         <h2>Now an excersice! (°(|)°) </h2>
         <h5>
           {" "}
@@ -172,6 +172,7 @@ const ArraysLessons = () => (
           start here{" "}
         </a>
         <br />
+
         <section>
           <h4>
             Can you tell what is the problem with this{" "}
@@ -219,6 +220,6 @@ const ArraysLessons = () => (
     </article>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
-)
+);
 
-export default ArraysLessons
+export default ArraysLessons;

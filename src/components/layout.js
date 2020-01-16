@@ -11,8 +11,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import { DiscussionEmbed } from "disqus-react";
 
 import Header from "./header";
-import "../assets/scss/main.scss";
-//import "./layout.css";
 
 const Layout = ({ children, pageId = "" }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +22,7 @@ const Layout = ({ children, pageId = "" }) => {
       }
     }
   `);
-  console.log(data);
+
   const disqusConfig = {
     shortname: "carec",
     config: { identifier: pageId }
@@ -36,13 +34,12 @@ const Layout = ({ children, pageId = "" }) => {
       <div
         style={{
           margin: `0 auto`,
-
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer className="box">
           <DiscussionEmbed {...disqusConfig} />
           {`Built with `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
 
 const SectionVsArticle = () => (
   <Layout pageId="SectionVsArticle">
@@ -10,6 +10,7 @@ const SectionVsArticle = () => (
     <h1>Hi carecs ლ(ಠ益ಠლ)</h1>
     <p>Welcome to Section vs Article</p>
     <Link to="/">Go back to the homepage</Link>
+
     <article>
       <section ariaLabel="section tag">
         <h2>{"<section />"}</h2>
@@ -40,6 +41,9 @@ const SectionVsArticle = () => (
           atribute to signal screen readers that a particular sub-part of the
           document begins.
         </p>
+      </section>
+      <section ariaLabel="section vs article tag">
+        <h1>Conclution</h1>
         <p>
           Since article it's for any self-contained thing it can be used instead
           of sections, and its well detected by screen readers , also helps
@@ -48,6 +52,6 @@ const SectionVsArticle = () => (
       </section>
     </article>
   </Layout>
-)
+);
 
-export default SectionVsArticle
+export default SectionVsArticle;
