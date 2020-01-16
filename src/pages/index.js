@@ -19,7 +19,12 @@ const IndexPage = () => (
     <p>
       You can propose topics for next lessons filling this form{" "}
       <a href="3">Form</a>{" "}
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify-recaptcha="true"
+        data-netlify="true"
+      >
         <p>
           <label>
             Your Name: <input type="text" name="name" />
