@@ -12,7 +12,13 @@ import { DiscussionEmbed } from "disqus-react";
 
 import Header from "./header";
 
-const Layout = ({ children, pageId = "" }) => {
+const Layout = ({
+  children,
+  pageId = "",
+  headerClass = "",
+  bodyClass = "",
+  footerClass = ""
+}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,16 +36,20 @@ const Layout = ({ children, pageId = "" }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        className={headerClass}
+      />
       <div
         style={{
           margin: `0 auto`,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0
         }}
+        className={bodyClass}
       >
         <main>{children}</main>
-        <footer className="box">
+        <footer className={`${footerClass} box`}>
           <DiscussionEmbed {...disqusConfig} />
           {`Built with `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

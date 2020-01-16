@@ -6,10 +6,15 @@ import SEO from "../../components/seo";
 import "../../assets/scss/components/_js.scss";
 
 const Javascript = () => (
-  <Layout pageId="JS-home">
+  <Layout
+    pageId="JS-home"
+    headerClass="blue"
+    bodyClass="blue"
+    footerClass="blue-light"
+  >
     <SEO title="JavaScript intro" />
 
-    <article>
+    <article id="jsHome">
       <Link to="/">Go back to the homepage</Link>
       <h1>Hi here we are gonna learn about JavaScript</h1>
       <p>Did you know that JS is the most used language on web dev?</p>
@@ -20,6 +25,7 @@ const Javascript = () => (
 
       <div>
         Before we began lets take a look at the history of JavaScript.
+        <br />
         <iframe
           width="560"
           height="315"
