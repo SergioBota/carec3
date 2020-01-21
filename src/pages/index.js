@@ -14,7 +14,7 @@ const IndexPage = () => (
     <p>Welcome to profesor Carec Himba's FrontEnd learning blog.</p>
     <p>
       Each post will have some comment section on{" "}
-      <a href="https://disqus.com/">Disqus.</a>, feel free to ask questions and
+      <a href="https://disqus.com/">Disqus</a>; feel free to ask questions and
       share materials there.
     </p>
     <article className="box dark-container">
@@ -54,9 +54,11 @@ const IndexPage = () => (
       </form>
     </article>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
-    <Link to="/JavaScript/javascript/">JavaScript intro</Link>
-
-    <Link to="/Html/section-vs-article/">Section Vs Article</Link>
+    <div>
+      <Link to="/JavaScript/javascript/">JavaScript intro</Link>
+      <Link to="/Css/history-of-css/">CSS intro</Link>
+      <Link to="/Html/section-vs-article/">Section Vs Article</Link>
+    </div>
   </Layout>
 );
 
