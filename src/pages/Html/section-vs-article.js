@@ -43,7 +43,7 @@ const SectionVsArticle = () => (
         </p>
       </section>
       <section ariaLabel="section vs article tag">
-        <h1>Conclution</h1>
+        <h1>Conclusion</h1>
         <p>
           Since article it's for any self-contained thing it can be used instead
           of sections, and its well detected by screen readers , also helps

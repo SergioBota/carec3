@@ -60,7 +60,7 @@ const HistoryOfCss = () => (
         hierarchy known as specificity. The breakthrough, though, was that it
         allowed for multiple stylesheets on the same page.
       </p>
-      <p>By the end of 1996, CSS had arrived</p>
+      <p>By the end of 1996, CSS had arrived.</p>
 
       <ul>
         <p>Checkout this two complete articles about the history of CSS.</p>

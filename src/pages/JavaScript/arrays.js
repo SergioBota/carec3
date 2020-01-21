@@ -7,10 +7,11 @@ import SEO from "../../components/seo";
 const ArraysLessons = () => (
   <Layout pageId="Arrays">
     <SEO title="Useful Arrays methods in JS" />
-    <h1>Hi i'm Professor Carec Himba and i will be your JS guide. (°(|)°)</h1>
-    <h2>Today we'll learn about some useful JS array methods:</h2>
 
     <article>
+      <h1>Hi i'm Professor Carec Himba and i will be your JS guide. (°(|)°)</h1>
+      <h2>Today we'll learn about some useful JS array methods:</h2>
+
       <ul>
         <li> map </li>
         <li> reduce </li>
@@ -23,35 +24,37 @@ const ArraysLessons = () => (
         <h1>map()</h1>
         <p>
           {" "}
-          array.map() simply creates a new array with the result of calling a
+          array.map(), simply creates a new array with the result of calling a
           function for each array element, this means the original array stays
           untouched and the mapped array is a new one.{" "}
         </p>
         <h4> Syntax </h4>
-        <p> array.map(function(currentValue, index, arr), thisValue) </p>
+        <code> array.map(function(currentValue, index, arr), thisValue) </code>
         <br />
         <p>
           {" "}
           Let's say we want to transforman an array of floats to a rounded
           integer one :{" "}
         </p>
-        <p>
+        <code>
           var numbers = [4.1, 1.9, 16, 25.5]; <br />
           var x = numbers.map(Math.round)
+        </code>
+        <p>
+          <a href="https://www.w3schools.com/code/tryit.asp?filename=G5V6RSAOBKDT">
+            {" "}
+            play with yourself ( If you know what i mean)
+          </a>
         </p>
-        <a href="https://www.w3schools.com/code/tryit.asp?filename=G5V6RSAOBKDT">
-          {" "}
-          play with yourself ( If you know what i mean)
-        </a>
       </section>
 
       <section className="box">
         <h1>reduce()</h1>
         <p>
           {" "}
-          array.reduce() collapses the array from left to right ( if you want it
-          to be from right to left you can use reduceRight() method.) returning
-          a single value.{" "}
+          array.reduce(), collapses the array from left to right ( if you want
+          it to be from right to left you can use reduceRight() method.)
+          returning a single value.{" "}
         </p>
         <p>
           {" "}
@@ -59,22 +62,24 @@ const ArraysLessons = () => (
           values. and also this method does not change the original array.
         </p>
         <h4> Syntax </h4>
-        <p>
+        <code>
           {" "}
           array.reduce(function(total, currentValue, currentIndex, arr),
           initialValue){" "}
-        </p>
+        </code>
         <br />
 
         <p> Let's say we want to sum all values in the array : </p>
-        <p>
+        <code>
           var numbers = [1,2,3]; <br />
           var x = numbers.reduce((total, currentValue) => total + currentValue )
+        </code>
+        <p>
+          <a href="https://www.w3schools.com/code/tryit.asp?filename=G5V6SQ2BC7PA">
+            {" "}
+            play with yourself ( If you know what i mean)
+          </a>
         </p>
-        <a href="https://www.w3schools.com/code/tryit.asp?filename=G5V6SQ2BC7PA">
-          {" "}
-          play with yourself ( If you know what i mean)
-        </a>
 
         <p>
           <b>Note:</b> don't worry about arrow function in the example we'll get
@@ -86,7 +91,7 @@ const ArraysLessons = () => (
         <h1>indexOf()</h1>
         <p>
           {" "}
-          array.indexOf() method searches the array for the specified item, and
+          array.indexOf(), method searches the array for the specified item, and
           returns its position.{" "}
         </p>
         <p>
@@ -95,7 +100,7 @@ const ArraysLessons = () => (
           start, use the lastIndexOf() method.
         </p>
         <h4> Syntax </h4>
-        <p>array.indexOf(item, start) </p>
+        <code>array.indexOf(item, start) </code>
         <br />
 
         <p>
@@ -103,14 +108,16 @@ const ArraysLessons = () => (
           Let's say we want to know the position of number 100 inside the number
           array :{" "}
         </p>
-        <p>
-          var numbers = [1,2,3,4,100, 6, 7, 8, 9, 10]; <br />
+        <code>
+          var numbers = [1, 2, 3, 4, 100, 6, 7, 8, 9, 10]; <br />
           var x = numbers.indexOf(100)
+        </code>
+        <p>
+          <a href="https://www.w3schools.com/code/tryit.asp?filename=G5V6QT8KJHKZ">
+            {" "}
+            play with yourself ( If you know what i mean)
+          </a>
         </p>
-        <a href="https://www.w3schools.com/code/tryit.asp?filename=G5V6QT8KJHKZ">
-          {" "}
-          play with yourself ( If you know what i mean)
-        </a>
       </section>
 
       <section className="box">
@@ -122,20 +129,22 @@ const ArraysLessons = () => (
           alphabetical and ascending order.
         </p>
         <h4> Syntax </h4>
-        <p> array.sort(compareFunction) </p>
+        <code> array.sort(compareFunction) </code>
         <br />
 
         <p> Let's say we want tosort the array in descending order: </p>
-        <p>
+        <code>
           {`
     	var numbers = [40, 100, 1, 5, 25, 10]; <br/>
       var x = numbers.sort((a, b) => {return b - a}) 
   `}
+        </code>
+        <p>
+          <a href="https://www.w3schools.com/code/tryit.asp?filename=G5V749AGM384">
+            {" "}
+            play with yourself ( If you know what i mean)
+          </a>
         </p>
-        <a href="https://www.w3schools.com/code/tryit.asp?filename=G5V749AGM384">
-          {" "}
-          play with yourself ( If you know what i mean)
-        </a>
       </section>
 
       <br />
@@ -167,10 +176,12 @@ const ArraysLessons = () => (
           now we can use map() and reduce() to get each team score and then
           sort() it:{" "}
         </p>
-        <a href="https://www.w3schools.com/code/tryit.asp?filename=G5V84E2QFSWX">
-          {" "}
-          start here{" "}
-        </a>
+        <p>
+          <a href="https://www.w3schools.com/code/tryit.asp?filename=G5V84E2QFSWX">
+            {" "}
+            start here{" "}
+          </a>
+        </p>
         <br />
 
         <section>
@@ -193,7 +204,7 @@ const ArraysLessons = () => (
       <br />
       <br />
       <section>
-        <h4>So what about fill() and [... array] ?</h4>
+        <h3>So what about fill() and [... array] ?</h3>
         <p> check this </p>
 
         <li>
