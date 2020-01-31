@@ -226,6 +226,12 @@ const ArraysLessons = () => (
             spread operator in JS
           </a>
         </li>
+        <li>
+          <a href="https://dev.to/rebeccauranga/10-array-methods-you-should-know-nn5">
+            {" "}
+            top 10 must know array functions.
+          </a>{" "}
+        </li>
       </section>
       <br />
     </article>

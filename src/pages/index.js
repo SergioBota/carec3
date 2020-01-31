@@ -9,16 +9,18 @@ const pageTitle = "Home";
 const IndexPage = () => (
   <Layout pageId={pageTitle}>
     <SEO title={pageTitle} />
-    <h1>Hi carecs ლ(ಠ益ಠლ)</h1>
-    <p>Welcome to profesor Carec Himba's FrontEnd learning blog.</p>
-    <p>
-      Each post will have some comment section on{" "}
-      <a href="https://disqus.com/">Disqus</a>; feel free to ask questions and
-      share materials there.
-    </p>
+
+    <section>
+      <h1>Hi carecs ლ(ಠ益ಠლ)</h1>
+      <p>Welcome to profesor Carec Himba's FrontEnd learning blog.</p>
+      <p>
+        Each post will have some comment section on{" "}
+        <a href="https://disqus.com/">Disqus</a>; feel free to ask questions and
+        share materials there.
+      </p>
+    </section>
     <article className="box dark-container">
       You can propose topics for next lessons filling this form{" "}
-      <a href="3">Form</a>{" "}
       <form
         name="contact"
         method="POST"
@@ -54,9 +56,17 @@ const IndexPage = () => (
     </article>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
     <div>
-      <Link to="/JavaScript/javascript/">JavaScript intro</Link>
-      <Link to="/Css/history-of-css/">CSS intro</Link>
-      <Link to="/Html/section-vs-article/">Section Vs Article</Link>
+      <ul>
+        <li>
+          <Link to="/JavaScript/javascript/">JavaScript intro</Link>
+        </li>
+        <li>
+          <Link to="/Css/history-of-css/">CSS intro</Link>
+        </li>
+        <li>
+          <Link to="/Html/section-vs-article/">Html intro</Link>
+        </li>
+      </ul>
     </div>
   </Layout>
 );

@@ -44,7 +44,7 @@ const Javascript = () => (
           </li>
           <li>
             {" "}
-            <Link to="/JavaScript/lesson1/" />{" "}
+            <Link to="/JavaScript/arrowFunctions/">Arrow functions</Link>{" "}
           </li>
         </ul>
       </article>
