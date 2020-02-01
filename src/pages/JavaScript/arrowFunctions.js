@@ -68,6 +68,12 @@ const ArrowFunctions = () => (
         Even better you could refactor the entire function to use async/await
         syntax, which is a great way to solve the nesting of functions.{" "}
       </p>
+
+      <h3> Further readings </h3>
+      <a href="https://dmitripavlutin.com/when-not-to-use-arrow-functions-in-javascript/">
+        {" "}
+        When not to use arrow functions?{" "}
+      </a>
     </article>
 
     <Link to="/">Go back to the homepage</Link>
