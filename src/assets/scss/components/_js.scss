@@ -31,6 +31,14 @@ $size-header-pad: 4em;
   h1, h2, h3, h4, h5, h6 {
     color: _palette(accent3, fg-bold);
   }
+  code {
+    background: _palette(accent3, fg);
+    color: _palette(accent3, fg-bold);
+    border: solid 2px _palette(accent3, border);
+  }
+  strong, b {
+    color: _palette(accent3, border2);
+  }
 }
 
 .blue-light{
@@ -42,5 +50,37 @@ $size-header-pad: 4em;
   h1, h2, h3, h4, h5, h6 {
     color: _palette(accent3, fg-bold);
   }
-}  
+}
+
+  .black {
+    background: _palette(accent4, bg);
+    color: _palette(accent4, fg-light);
+    a {
+      color: _palette(accent4, border2);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: _palette(accent4, fg-bold);
+    }
+    code {
+      background: _palette(accent4, fg);
+      color: _palette(accent4, fg-bold);
+      border: solid 2px _palette(accent4, border);
+    }
+    strong, b {
+      color: _palette(accent4, border2);;
+    }
+  }
+
+  .black-light {
+    background: _palette(accent4, fg);
+    color: _palette(accent4, fg-bold);
+    a {
+      color: _palette(accent4, border);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: _palette(accent4, fg-light);
+    }
+  }
+  
+
 

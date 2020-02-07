@@ -5,7 +5,12 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 
 const ArrowFunctions = () => (
-  <Layout pageId="ArrowFunctions">
+  <Layout
+    pageId="ArrowFunctions"
+    headerClass="black"
+    bodyClass="black"
+    footerClass="black-light"
+  >
     <SEO title="Arrow Functions Explained" />
     <article>
       <h1>Arrow Functions </h1>
