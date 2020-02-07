@@ -27,9 +27,15 @@ $size-header-pad: 4em;
   color: _palette(accent3, fg);
   a {
     color: _palette(accent3, border);
+    &:hover {
+      color: _palette(accent3, border2);
+    }
   }
   h1, h2, h3, h4, h5, h6 {
     color: _palette(accent3, fg-bold);
+    &:hover {
+      color: _palette(accent3, border2);
+    }
   }
   code {
     background: _palette(accent3, fg);
@@ -57,6 +63,9 @@ $size-header-pad: 4em;
     color: _palette(accent4, fg-light);
     a {
       color: _palette(accent4, border2);
+      &:hover {
+        color: _palette(accent4, border);
+      }
     }
     h1, h2, h3, h4, h5, h6 {
       color: _palette(accent4, fg-bold);
@@ -82,5 +91,36 @@ $size-header-pad: 4em;
     }
   }
   
+  .cream {
+    background: _palette(accent5, bg);
+    color: _palette(accent5, fg);
+    a {
+      color: _palette(accent5, border);
+      &:hover {
+        color: _palette(accent5, border);
+      }
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: _palette(accent5, fg-bold);
+    }
+    code {
+      background: _palette(accent5, fg);
+      color: _palette(accent5, fg-bold);
+      border: solid 2px _palette(accent5, border);
+    }
+    strong, b {
+      color: _palette(accent5, border2);;
+    }
+  }
 
+  .cream-light {
+    background: _palette(accent5, fg);
+    color: _palette(accent5, border2);
+    a {
+      color: _palette(accent5, border);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: _palette(accent5, fg-light);
+    }
+  }
 

@@ -76,6 +76,13 @@ const HistoryOfCss = () => (
           </a>
         </li>
       </ul>
+      <h2>Next lessons:</h2>
+      <ul>
+        <li>
+          {" "}
+          <Link to="/Css/css4/">CSS4</Link>{" "}
+        </li>
+      </ul>
     </article>
   </Layout>
 );
