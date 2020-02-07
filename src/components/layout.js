@@ -52,7 +52,9 @@ const Layout = ({
         <footer className={`${footerClass} box`}>
           <DiscussionEmbed {...disqusConfig} />
           {`Built with `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby </a>
+          {` Themes by `}
+          <a href="https://www.happyhues.co/">HappyHues</a>
         </footer>
       </div>
     </>
