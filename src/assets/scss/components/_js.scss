@@ -52,9 +52,19 @@ $size-header-pad: 4em;
   color: _palette(accent3, bg);
   a {
     color: _palette(accent3, border);
+    font-weight: bolder;
   }
   h1, h2, h3, h4, h5, h6 {
-    color: _palette(accent3, fg-bold);
+    color: _palette(accent3, bg);
+  }
+  .box{
+    background: _palette(accent3,fg-bold);
+    a {
+      font-weight: bolder;
+    }
+  }
+  .dark-container{
+    color: _palette(accent3, bg);
   }
 }
 

@@ -5,7 +5,12 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 
 const ArraysLessons = () => (
-  <Layout pageId="Arrays">
+  <Layout
+    pageId="Arrays"
+    headerClass="blue"
+    bodyClass="blue-light"
+    footerClass="blue"
+  >
     <SEO title="Useful Arrays methods in JS" />
 
     <article>
@@ -203,7 +208,7 @@ const ArraysLessons = () => (
       </div>
       <br />
       <br />
-      <section>
+      <section class="box dark-container">
         <h3>So what about fill() and [... array] ?</h3>
         <p> check this </p>
 
@@ -232,10 +237,12 @@ const ArraysLessons = () => (
             top 10 must know array functions.
           </a>{" "}
         </li>
+        <br />
+        <br />
+        <Link to="/">Go back to the homepage</Link>
       </section>
       <br />
     </article>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 );
 
