@@ -139,3 +139,38 @@ $size-header-pad: 4em;
     }
   }
 
+  .green {
+    background: _palette(accent6, bg);
+    color: _palette(accent6, fg);
+    a {
+      color: _palette(accent6, border);
+      &:hover {
+        color: _palette(accent6, border);
+      }
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: _palette(accent6, fg-bold);
+    }
+    code {
+      background: _palette(accent6, fg);
+      color: _palette(accent6, fg-bold);
+      border: solid 2px _palette(accent6, border);
+    }
+    strong, b {
+      color: _palette(accent6, border2);;
+    }
+    div {
+      border-bottom: solid 2px _palette(accent6, border);
+    }
+  }
+
+  .green-light {
+    background: _palette(accent6, fg);
+    color: _palette(accent6, border2);
+    a {
+      color: _palette(accent6, border);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: _palette(accent6, fg-light);
+    }
+  }
