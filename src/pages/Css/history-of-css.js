@@ -5,7 +5,12 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 
 const HistoryOfCss = () => (
-  <Layout pageId="HistoryOfCss">
+  <Layout
+    pageId="HistoryOfCss"
+    headerClass="blue-light"
+    bodyClass="blue"
+    footerClass="blue-light"
+  >
     <SEO title="History Of Css" />
 
     <article>

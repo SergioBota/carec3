@@ -5,7 +5,12 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 
 const SectionVsArticle = () => (
-  <Layout pageId="SectionVsArticle">
+  <Layout
+    pageId="SectionVsArticle"
+    headerClass="cream-light"
+    bodyClass="cream-light"
+    footerClass="cream"
+  >
     <SEO title="Section vs Article" />
     <h1>Hi carecs ლ(ಠ益ಠლ)</h1>
     <p>Welcome to Section vs Article</p>
