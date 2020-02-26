@@ -4,12 +4,13 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "../assets/scss/main.scss";
+import Menu from "../components/menu";
 const pageTitle = "Home";
 
 const IndexPage = () => (
   <Layout pageId={pageTitle}>
     <SEO title={pageTitle} />
-
+    <Menu />
     <section>
       <h1>Hi carecs ლ(ಠ益ಠლ)</h1>
       <p>Welcome to profesor Carec Himba's FrontEnd learning blog.</p>
@@ -58,13 +59,13 @@ const IndexPage = () => (
     <div>
       <ul>
         <li>
-          <Link to="/JavaScript/javascript/">JavaScript intro</Link>
+          <Link to="/JavaScript/javascript/">JS intro</Link>
         </li>
         <li>
           <Link to="/Css/history-of-css/">CSS intro</Link>
         </li>
         <li>
-          <Link to="/Html/section-vs-article/">Html intro</Link>
+          <Link to="/Html/section-vs-article/">HTML intro</Link>
         </li>
       </ul>
     </div>

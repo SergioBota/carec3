@@ -28,7 +28,7 @@ const Header = ({ siteTitle, className = "" }) => (
             textDecoration: `none`
           }}
         >
-          {`ლ(°(|)°ლ)  `} {siteTitle}
+          {`ლ(°(|)°ლ)  ${siteTitle}`}
         </Link>
       </h1>
     </div>

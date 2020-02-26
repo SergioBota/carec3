@@ -46,6 +46,10 @@ const Javascript = () => (
             {" "}
             <Link to="/JavaScript/arrowFunctions/">Arrow functions</Link>{" "}
           </li>
+          <li>
+            {" "}
+            <Link to="/JavaScript/strictMode/">Strict Mode</Link>{" "}
+          </li>
         </ul>
       </article>
     </article>

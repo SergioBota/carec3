@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Profesor Carec`,
-    description: `desc.`,
+    title: `Professor Carec`,
+    description: `Professor Carec Himba. is a blog for front end skill improvement`,
     author: `@gatsbyjs`
   },
   plugins: [
