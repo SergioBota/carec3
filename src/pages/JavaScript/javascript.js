@@ -42,6 +42,7 @@ const Javascript = () => (
           {" "}
           JavaScript: The First 20 Years
         </a>
+        <p> </p>
       </section>
       <article>
         <h2>Next lessons:</h2>
