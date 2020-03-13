@@ -35,6 +35,14 @@ const Javascript = () => (
           allowfullscreen
         />
       </div>
+
+      <section>
+        <p>Other reads:</p>
+        <a href="http://www.wirfs-brock.com/allen/posts/866">
+          {" "}
+          JavaScript: The First 20 Years
+        </a>
+      </section>
       <article>
         <h2>Next lessons:</h2>
         <ul>
