@@ -8,31 +8,28 @@ const Menu = ({ className = "" }) => {
   const initialProps = {
     left: "0%",
     top: "0%",
-    width: "0%",
-    height: "0%",
-    background: "lightgreen"
+    width: "30%",
+    height: "100%",
+    background: "lightblue"
   };
 
   const transitionProps = async next => {
     await next({
-      left: "0%",
-      top: "0%",
-      width: "100%",
-      height: "100%",
+      width: "1000px",
+      height: "1000px",
       background: "lightblue"
     });
-    await next({ height: "50%", background: "lightgreen" });
     await next({
       width: "50%",
-      left: "50%",
       background: "lightgoldenrodyellow"
     });
-    await next({ top: "0%", height: "100%", background: "lightpink" });
-    await next({ top: "50%", height: "50%", background: "lightsalmon" });
-    await next({ width: "100%", left: "0%", background: "lightcoral" });
     await next({ width: "50%", background: "lightseagreen" });
     await next({ top: "0%", height: "100%", background: "lightskyblue" });
-    await next({ width: "100%", background: "lightslategrey" });
+    await next({
+      width: "1000px",
+      height: "1000px",
+      background: "lightslategrey"
+    });
   };
   const props = useSpring({
     from: initialProps,
@@ -47,12 +44,18 @@ const Menu = ({ className = "" }) => {
     >
       <div
         style={{
-          margin: `0 auto`,
+          // margin: `0 auto`,
           maxWidth: 960,
+          minWidth: 100,
           padding: `1.45rem 1.0875rem`
         }}
       >
         <h1 style={{ margin: 0 }}>{`ლ(°(|)°ლ)`}</h1>
+        <div>
+          <ul>
+            <li>option 1</li>
+          </ul>
+        </div>
       </div>
     </animated.div>
   );
