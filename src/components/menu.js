@@ -24,7 +24,7 @@ const Menu = ({
     left: "0%",
     top: "0%",
     width: "25%",
-    height: "15%",
+    height: "12%",
     background: initialColor,
     color: textColor
   };
@@ -58,7 +58,7 @@ const Menu = ({
           // margin: `0 auto`,
           maxWidth: 960,
           minWidth: 100,
-          padding: `1.45rem 1.0875rem`
+          padding: `1.45rem 0.0875rem`
         }}
       >
         <h1 style={{ margin: 0, color: `white`, textDecoration: `none` }}>
