@@ -20,7 +20,7 @@ const Header = ({ siteTitle, className = "" }) => (
         padding: `1.45rem 1.0875rem`
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ marginLeft: "25%" }}>
         <Link
           to="/"
           style={{
@@ -28,7 +28,7 @@ const Header = ({ siteTitle, className = "" }) => (
             textDecoration: `none`
           }}
         >
-          {`ლ(°(|)°ლ)  ${siteTitle}`}
+          {` ${siteTitle}`}
         </Link>
       </h1>
     </div>

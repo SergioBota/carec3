@@ -1,0 +1,36 @@
+{
+  "root": [
+    {
+      "title": "JS",
+      "path": "/JavaScript/javascript/",
+      "children": [
+        {
+          "title": "Array functions",
+          "path": "/JavaScript/arrays/"
+        },
+        {
+          "title": "Arrow functions",
+          "path": "/JavaScript/arrowFunctions/"
+        },
+        {
+          "title": "Strict Mode",
+          "path": "/JavaScript/strictMode/"
+        }
+      ]
+    },
+    {
+      "title": "CSS",
+      "path": "/Css/history-of-css/",
+      "children": [
+        {
+          "title": "CSS4",
+          "path": "/Css/css4/"
+        }
+      ]
+    },
+    {
+      "title": "HTML",
+      "path": "/Html/section-vs-article/"
+    }
+  ]
+}

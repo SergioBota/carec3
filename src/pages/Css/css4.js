@@ -10,6 +10,7 @@ const css4 = () => (
     headerClass="cream-light"
     bodyClass="cream"
     footerClass="cream-light"
+    initialMenuColor="#001858"
   >
     <SEO title="CSS4" />
 

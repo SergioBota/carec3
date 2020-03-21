@@ -11,6 +11,7 @@ const Javascript = () => (
     headerClass="blue"
     bodyClass="blue"
     footerClass="blue-light"
+    initialMenuColor="#232946"
   >
     <SEO title="JavaScript intro" />
 

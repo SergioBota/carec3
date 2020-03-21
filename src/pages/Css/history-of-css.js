@@ -10,6 +10,7 @@ const HistoryOfCss = () => (
     headerClass="green"
     bodyClass="green"
     footerClass="green-light"
+    initialMenuColor="#004643"
   >
     <SEO title="History Of Css" />
 

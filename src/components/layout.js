@@ -11,13 +11,16 @@ import { useStaticQuery, graphql } from "gatsby";
 import { DiscussionEmbed } from "disqus-react";
 
 import Header from "./header";
+import Menu from "./menu";
 
 const Layout = ({
   children,
   pageId = "",
   headerClass = "",
   bodyClass = "",
-  footerClass = ""
+  footerClass = "",
+  initialMenuColor,
+  menuTextColor
 }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -40,6 +43,7 @@ const Layout = ({
         siteTitle={data.site.siteMetadata.title}
         className={headerClass}
       />
+      <Menu initialColor={initialMenuColor} textColor={menuTextColor} />
       <div
         style={{
           margin: `0 auto`,

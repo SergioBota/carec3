@@ -10,6 +10,7 @@ const ArraysLessons = () => (
     headerClass="blue"
     bodyClass="blue-light"
     footerClass="blue"
+    initialMenuColor="#232946"
   >
     <SEO title="Useful Arrays methods in JS" />
 

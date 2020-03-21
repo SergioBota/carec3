@@ -10,6 +10,7 @@ const SectionVsArticle = () => (
     headerClass="cream-light"
     bodyClass="cream-light"
     footerClass="cream"
+    initialMenuColor="#001858"
   >
     <SEO title="Section vs Article" />
     <h1>Hi carecs ლ(ಠ益ಠლ)</h1>

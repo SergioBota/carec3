@@ -2,34 +2,45 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
+import { default as data } from "../../menu-tree.json";
 
-const Menu = ({ className = "" }) => {
+const Menu = ({
+  className = "",
+  initialColor = "#716040",
+  textColor = "white"
+}) => {
+  const slug = (path, title) => {
+    console.log(path, title);
+    return (
+      <li>
+        <Link to={path}>{title}</Link>
+      </li>
+    );
+  };
+
   const [open, toggle] = useState(false);
   const initialProps = {
+    position: "fixed",
     left: "0%",
     top: "0%",
-    width: "30%",
-    height: "100%",
-    background: "lightblue"
+    width: "25%",
+    height: "15%",
+    background: initialColor,
+    color: textColor
   };
 
   const transitionProps = async next => {
-    await next({
-      width: "1000px",
-      height: "1000px",
+    /* await next({
+      width: "33%",
+      height: "50%",
       background: "lightblue"
-    });
+    });*/
     await next({
-      width: "50%",
+      width: "40%",
+      height: "70%",
       background: "lightgoldenrodyellow"
     });
-    await next({ width: "50%", background: "lightseagreen" });
     await next({ top: "0%", height: "100%", background: "lightskyblue" });
-    await next({
-      width: "1000px",
-      height: "1000px",
-      background: "lightslategrey"
-    });
   };
   const props = useSpring({
     from: initialProps,
@@ -50,10 +61,28 @@ const Menu = ({ className = "" }) => {
           padding: `1.45rem 1.0875rem`
         }}
       >
-        <h1 style={{ margin: 0 }}>{`ლ(°(|)°ლ)`}</h1>
+        <h1 style={{ margin: 0, color: `white`, textDecoration: `none` }}>
+          {`ლ(°(|)°ლ) `}
+        </h1>
+
         <div>
           <ul>
-            <li>option 1</li>
+            <li
+              style={{
+                display: open ? `block` : `none`
+              }}
+            >
+              <Link
+                to="/"
+                style={{
+                  color: `white`,
+                  textDecoration: `none`
+                }}
+              >
+                {`Home `}
+              </Link>
+            </li>
+            {open && data && data.root.map(link => slug(link.path, link.title))}
           </ul>
         </div>
       </div>

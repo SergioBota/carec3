@@ -10,6 +10,7 @@ const ArrowFunctions = () => (
     headerClass="black"
     bodyClass="black"
     footerClass="black-light"
+    initialMenuColor="#16161a"
   >
     <SEO title="Arrow Functions Explained" />
     <article>

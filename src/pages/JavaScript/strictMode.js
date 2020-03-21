@@ -10,6 +10,7 @@ const StrictMode = () => (
     headerClass="black"
     bodyClass="black-light"
     footerClass="black"
+    initialMenuColor="#16161a"
   >
     <SEO title="use strict Explained" />
     <article>
