@@ -2,31 +2,23 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
-import { default as data } from "../../menu-tree.json";
+import ArticleLink from "./articleLink";
 
 const Menu = ({
   className = "",
   initialColor = "#716040",
   textColor = "white"
 }) => {
-  const slug = (path, title) => {
-    console.log(path, title);
-    return (
-      <li>
-        <Link to={path}>{title}</Link>
-      </li>
-    );
-  };
-
   const [open, toggle] = useState(false);
   const initialProps = {
-    position: "fixed",
+    position: "absolute",
     left: "0%",
     top: "0%",
     width: "25%",
     height: "12%",
     background: initialColor,
-    color: textColor
+    color: textColor,
+    borderRadius: "10%"
   };
 
   const transitionProps = async next => {
@@ -36,11 +28,17 @@ const Menu = ({
       background: "lightblue"
     });*/
     await next({
-      width: "40%",
-      height: "70%",
-      background: "lightgoldenrodyellow"
+      width: "45%",
+      height: "85%",
+      background: "lightblue"
     });
-    await next({ top: "0%", height: "100%", background: "lightskyblue" });
+    await next({
+      top: "0%",
+      height: "100%",
+      background: "lightskyblue",
+      position: "fixed",
+      borderRadius: "0"
+    });
   };
   const props = useSpring({
     from: initialProps,
@@ -61,11 +59,23 @@ const Menu = ({
           padding: `1.45rem 0.0875rem`
         }}
       >
-        <h1 style={{ margin: 0, color: `white`, textDecoration: `none` }}>
-          {`ლ(°(|)°ლ) `}
+        <h1
+          style={{
+            margin: 0,
+            color: `white`,
+            textDecoration: `none`,
+            borderBottom: `solid 2px ${initialColor}`,
+            paddingBottom: "0.45em"
+          }}
+        >
+          {open ? "CLOSE" : `ლ(°(|)°ლ) `}
         </h1>
 
-        <div>
+        <div
+          style={{
+            padding: "1em 0.5em"
+          }}
+        >
           <ul>
             <li
               style={{
@@ -76,13 +86,14 @@ const Menu = ({
                 to="/"
                 style={{
                   color: `white`,
-                  textDecoration: `none`
+                  textDecoration: `none`,
+                  margin: "1em"
                 }}
               >
                 {`Home `}
               </Link>
             </li>
-            {open && data && data.root.map(link => slug(link.path, link.title))}
+            {open && <ArticleLink initialColor={initialColor} />}
           </ul>
         </div>
       </div>

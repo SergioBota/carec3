@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import ArticleLink from "../components/articleLink";
 import "../assets/scss/main.scss";
 
 const pageTitle = "Home";
@@ -56,18 +57,12 @@ const IndexPage = () => (
       </form>
     </article>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
-    <div>
-      <ul>
-        <li>
-          <Link to="/JavaScript/javascript/">JS intro</Link>
-        </li>
-        <li>
-          <Link to="/Css/history-of-css/">CSS intro</Link>
-        </li>
-        <li>
-          <Link to="/Html/section-vs-article/">HTML intro</Link>
-        </li>
-      </ul>
+    <div
+      className=""
+      style={{ maxWidth: `300px`, marginBottom: `1.45rem`, padding: "2.5em" }}
+    >
+      <h2>Site map: </h2>
+      <ArticleLink />
     </div>
   </Layout>
 );
