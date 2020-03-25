@@ -13,6 +13,10 @@
           "path": "/JavaScript/arrowFunctions/"
         },
         {
+          "title": "Destructuring",
+          "path": "/JavaScript/destructuring/"
+        },
+        {
           "title": "Strict Mode",
           "path": "/JavaScript/strictMode/"
         }
