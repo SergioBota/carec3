@@ -213,6 +213,7 @@
 
 	header {
 		background: _palette(fg-bold);
+		border-bottom: solid 2px _palette(border);
 		p {
 			color: _palette(fg-light);
 			position: relative;

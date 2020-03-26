@@ -16,7 +16,6 @@ const HistoryOfCss = () => (
 
     <article>
       <h1>Welcome to a Brief history of CSS</h1>
-      <Link to="/">Go back to the homepage</Link>
 
       <p>
         Did you know that Timb Berners -Lee created the Web (World Wide Web) in

@@ -15,7 +15,6 @@ const SectionVsArticle = () => (
     <SEO title="Section vs Article" />
     <h1>Hi carecs ლ(ಠ益ಠლ)</h1>
     <p>Welcome to Section vs Article</p>
-    <Link to="/">Go back to the homepage</Link>
 
     <article>
       <section ariaLabel="section tag">

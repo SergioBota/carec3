@@ -16,7 +16,6 @@ const Javascript = () => (
     <SEO title="JavaScript intro" />
 
     <article id="jsHome">
-      <Link to="/">Go back to the homepage</Link>
       <h1>Hi here we are gonna learn about JavaScript</h1>
       <p>Did you know that JS is the most used language on web dev?</p>
       <p>
@@ -55,6 +54,10 @@ const Javascript = () => (
           <li>
             {" "}
             <Link to="/JavaScript/arrowFunctions/">Arrow functions</Link>{" "}
+          </li>
+          <li>
+            {" "}
+            <Link to="/JavaScript/destructuring/">Destructuring</Link>{" "}
           </li>
           <li>
             {" "}

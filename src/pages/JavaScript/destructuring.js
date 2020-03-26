@@ -8,8 +8,8 @@ const Destructuring = () => (
   <Layout
     pageId="ArrowFunctions"
     headerClass="black"
-    bodyClass="black"
-    footerClass="black-light"
+    bodyClass="black-light"
+    footerClass="black"
     initialMenuColor="#16161a"
   >
     <SEO title="Destructuring Explained" />
