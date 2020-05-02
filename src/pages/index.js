@@ -5,7 +5,12 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ArticleLink from "../components/articleLink";
 import "../assets/scss/main.scss";
-
+/*
+        name="contact"
+        method="POST"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+*/
 const pageTitle = "Home";
 
 const IndexPage = () => (
@@ -23,12 +28,7 @@ const IndexPage = () => (
     </section>
     <article className="box dark-container">
       You can propose topics for next lessons filling this form{" "}
-      <form
-        name="contact"
-        method="POST"
-        netlify-honeypot="bot-field"
-        data-netlify="true"
-      >
+      <form>
         <input type="hidden" name="bot-field" />
         <p>
           <label>
